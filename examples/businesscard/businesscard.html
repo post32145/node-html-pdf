@@ -1,97 +1,126 @@
 <html>
-  <head>
-    <meta charset="utf8">
-    <title>SuitArt Business Card</title>
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Sackers Gothic Std';
-        font-weight: 500;
-        font-size: 7px;
-        background: rgb(241,241,241);
-        -webkit-print-color-adjust: exact;
-        box-sizing: border-box;
+
+<head>
+  <meta charset="utf8">
+  <title>SuitArt Business Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'IBM Plex Sans Thai', sans-serif;
+      font-weight: 500;
+      font-size: 7px;
+      background: red;
+      -webkit-print-color-adjust: exact;
+      box-sizing: border-box;
+    }
+
+    .page {
+      position: relative;
+      height: 50mm;
+      width: 90mm;
+      display: block;
+      background: red;
+      page-break-after: auto;
+      margin: 50px;
+      overflow: hidden;
+    }
+
+    @media print {
+      body {
+        background: red;
       }
 
       .page {
-        position: relative;
-        height: 90mm;
-        width: 50mm;
-        display: block;
-        background: black;
-        page-break-after: auto;
-        margin: 50px;
-        overflow: hidden;
+        margin: 0;
+        height: 100%;
+        width: 100%;
       }
+    }
 
-      @media print {
-        body {
-          background: black;
-        }
 
-        .page {
-          margin: 0;
-          height: 100%;
-          width: 100%;
-        }
-      }
+    .content {
+      position: absolute;
+      left: 5mm;
+      right: 5mm;
+      bottom: 5mm;
+      top: 5mm;
+      background-color: white;
+    }
 
-      .page.first {
-        border-left: 5px solid green;
-      }
+    .page.first {
+      border-left: 5px solid green;
+    }
 
-      .bottom {
-        position: absolute;
-        left: 5mm;
-        right: 5mm;
-        bottom: 5mm;
-      }
+    .bottom {
+      position: absolute;
+      left: 5mm;
+      right: 5mm;
+      bottom: 5mm;
+      background-color: white;
+    }
 
-      .group {
-        margin-top: 3mm;
-      }
+    .group {
+      margin-top: 3mm;
+    }
 
-      .line {
-        color: white;
-        position: relative;
-      }
+    .line {
+      /* color: white; */
+      position: relative;
+    }
 
-      .center {
-        text-align: center;
-      }
+    .center {
+      text-align: center;
+    }
 
-      .logo {
-        position: relative;
-        width: 80%;
-        left: 10%;
-        top: 15%;
-      }
+    .logo {
+      position: relative;
+      width: 80%;
+      left: 10%;
+      top: 15%;
+    }
+  </style>
+</head>
 
-    </style>
-  </head>
-  <body>
-    <div class="page">
-      <div class="bottom">
-        <div class="line">Marc Bachmann</div>
-        <div class="line">cto</div>
+<body>
+  <div class="page">
+    <div class="content">
+      <h1>โพสตั๋วกูอ่ะ</h1>
+      asdasdasd
+    </div>
+    <div class="bottom">
+      <div class="line">Marc Bachmann</div>
+      <div class="line">cto</div>
 
-        <div class="group">
-          <div class="line">p: +41 00 000 00 00</div>
-          <div class="line">github: marcbachmann</div>
-        </div>
-        <div class="group">
-          <div class="line">suitart ag</div>
-          <div class="line">räffelstrasse 25</div>
-          <div class="line">8045 zürich</div>
-        </div>
+      <div class="group">
+        <div class="line">p: +41 00 000 00 00</div>
+        <div class="line">github: marcbachmann</div>
+        <div class="line">github: marcbachmann</div>
+        <div class="line">github: marcbachmann</div>
+        <div class="line">github: marcbachmann</div> 
+        <div class="line">github: marcbachmann</div>
+        <div class="line">github: marcbachmann</div>
+        <div class="line">github: marcbachmann</div>
+        <div class="line">github: marcbachmann</div>
+        <div class="line">github: marcbachmann</div>
+        <div class="line">github: marcbachmann</div>
+        <div class="line">github: marcbachmann</div>
+      </div>
+      <div class="group">
+        <div class="line">suitart ag</div>
+        <div class="line">räffelstrasse 25</div>
+        <div class="line">8045 zürich</div>
       </div>
     </div>
-    <div class="page">
-      <img class="logo" src="{{image}}">
-      <div class="bottom">
-          <div class="line center">8045 zürich</div>
-      </div>
+  </div>
+  <div class="page">
+    <img class="logo" src="https://via.placeholder.com/150x150">
+    <div class="bottom">
+      <div class="line center">8045 zürich</div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

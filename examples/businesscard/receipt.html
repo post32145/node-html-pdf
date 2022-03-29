@@ -1,0 +1,907 @@
+<html>
+
+<head>
+  <meta charset="utf8">
+  <title>SuitArt Business Card</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    .mt-0,
+    .my-0 {
+      margin-top: 0 !important;
+    }
+
+    .mr-0,
+    .mx-0 {
+      margin-right: 0 !important;
+    }
+
+    .mb-0,
+    .my-0 {
+      margin-bottom: 0 !important;
+    }
+
+    .m-1 {
+      margin: 0.25rem !important;
+    }
+
+    .mt-1,
+    .my-1 {
+      margin-top: 0.25rem !important;
+    }
+
+    .me-1,
+    .mx-1 {
+      margin-right: 0.25rem !important;
+    }
+
+    .mb-1,
+    .my-1 {
+      margin-bottom: 0.25rem !important;
+    }
+
+    .ms-1,
+    .mx-1 {
+      margin-left: 0.25rem !important;
+    }
+
+    .m-2 {
+      margin: 0.5rem !important;
+    }
+
+    .mt-2,
+    .my-2 {
+      margin-top: 0.5rem !important;
+    }
+
+    .me-2,
+    .mx-2 {
+      margin-right: 0.5rem !important;
+    }
+
+    .mb-2,
+    .my-2 {
+      margin-bottom: 0.5rem !important;
+    }
+
+    .ms-2,
+    .mx-2 {
+      margin-left: 0.5rem !important;
+    }
+
+    .m-3 {
+      margin: 1rem !important;
+    }
+
+    .mt-3,
+    .my-3 {
+      margin-top: 1rem !important;
+    }
+
+    .me-3,
+    .mx-3 {
+      margin-right: 1rem !important;
+    }
+
+    .mb-3,
+    .my-3 {
+      margin-bottom: 1rem !important;
+    }
+
+    .ms-3,
+    .mx-3 {
+      margin-left: 1rem !important;
+    }
+
+    .m-4 {
+      margin: 1.5rem !important;
+    }
+
+    .mt-4,
+    .my-4 {
+      margin-top: 1.5rem !important;
+    }
+
+    .me-4,
+    .mx-4 {
+      margin-right: 1.5rem !important;
+    }
+
+    .mb-4,
+    .my-4 {
+      margin-bottom: 1.5rem !important;
+    }
+
+    .ms-4,
+    .mx-4 {
+      margin-left: 1.5rem !important;
+    }
+
+    .m-5 {
+      margin: 3rem !important;
+    }
+
+    .mt-5,
+    .my-5 {
+      margin-top: 3rem !important;
+    }
+
+    .me-5,
+    .mx-5 {
+      margin-right: 3rem !important;
+    }
+
+    .mb-5,
+    .my-5 {
+      margin-bottom: 3rem !important;
+    }
+
+    .ms-5,
+    .mx-5 {
+      margin-left: 3rem !important;
+    }
+
+    .p-0 {
+      padding: 0 !important;
+    }
+
+    .pt-0,
+    .py-0,
+    .pt-0 td,
+    .py-0 td {
+      padding-top: 0 !important;
+    }
+
+    .pe-0,
+    .px-0 {
+      padding-right: 0 !important;
+    }
+
+    .pb-0,
+    .py-0,
+    .pb-0 td,
+    .py-0 td {
+      padding-bottom: 0 !important;
+    }
+
+    .ps-0,
+    .px-0,
+    .ps-0 td,
+    .px-0 td {
+      padding-left: 0 !important;
+    }
+
+    .p-1 {
+      padding: 0.25rem !important;
+    }
+
+    .pt-1,
+    .py-1 {
+      padding-top: 0.25rem !important;
+    }
+
+    .pe-1,
+    .px-1 {
+      padding-right: 0.25rem !important;
+    }
+
+    .pb-1,
+    .py-1 {
+      padding-bottom: 0.25rem !important;
+    }
+
+    .ps-1,
+    .px-1 {
+      padding-left: 0.25rem !important;
+    }
+
+    .p-2 {
+      padding: 0.5rem !important;
+    }
+
+    .pt-2,
+    .py-2 {
+      padding-top: 0.5rem !important;
+    }
+
+    .pe-2,
+    .px-2 {
+      padding-right: 0.5rem !important;
+    }
+
+    .pb-2,
+    .py-2 {
+      padding-bottom: 0.5rem !important;
+    }
+
+    .ps-2,
+    .px-2 {
+      padding-left: 0.5rem !important;
+    }
+
+    .p-3 {
+      padding: 1rem !important;
+    }
+
+    .pt-3,
+    .py-3,
+    .pt-3 td,
+    .py-3 td {
+      padding-top: 1rem !important;
+    }
+
+    .pe-3,
+    .px-3 {
+      padding-right: 1rem !important;
+    }
+
+    .pb-3,
+    .py-3,
+    .pb-3 td,
+    .py-3 td {
+      padding-bottom: 1rem !important;
+    }
+
+    .ps-3,
+    .px-3 {
+      padding-left: 1rem !important;
+    }
+
+    .p-4 {
+      padding: 1.5rem !important;
+    }
+
+    .pt-4,
+    .py-4 {
+      padding-top: 1.5rem !important;
+    }
+
+    .pe-4,
+    .px-4 {
+      padding-right: 1.5rem !important;
+    }
+
+    .pb-4,
+    .py-4,
+    .pb-4 td,
+    .py-4 td {
+      padding-bottom: 1.5rem !important;
+    }
+
+    .ps-4,
+    .px-4 {
+      padding-left: 1.5rem !important;
+    }
+
+    html {
+      font-size: 10px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 500;
+      font-size: 10px;
+      background: white;
+      -webkit-print-color-adjust: exact;
+      box-sizing: border-box;
+    }
+
+    .page {
+      position: relative;
+      height: 50mm;
+      width: 90mm;
+      display: block;
+      page-break-after: auto;
+      margin: 50px;
+      overflow: hidden;
+    }
+
+    .bg-gradient-primary {
+      background: linear-gradient(135deg, #FF9336 0%, #FF5136 84%);
+    }
+
+    @media print {
+      body {
+        /* background: darkgray; */
+      }
+
+      .page {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    h1,
+    .h1 {
+      font-size: 2.5rem;
+    }
+
+    h2,
+    .h2 {
+      font-size: 2rem;
+    }
+
+    h3,
+    .h3 {
+      font-size: 1.75rem;
+    }
+
+    h4,
+    .h4 {
+      font-size: 1.5rem;
+    }
+
+    h5,
+    .h5 {
+      font-size: 1.25rem;
+    }
+
+    h6,
+    .h6 {
+      font-size: 1rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+      font-family: 'IBM Plex Sans Thai', sans-serif;
+      /* font-weight: bolder; */
+    }
+
+    .font-paragraph {
+      font-family: 'Bai Jamjuree', sans-serif !important;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    strong,
+    .text-bold {
+      font-weight: bolder;
+    }
+
+    .w-100 {
+      width: 100%;
+    }
+
+    .v-top {
+      vertical-align: top;
+    }
+
+    .v-center {
+      vertical-align: center;
+    }
+
+    .v-bottom {
+      vertical-align: bottom;
+    }
+
+    .position-relative {
+      position: relative;
+    }
+
+    .bg-red {
+      background-color: red;
+    }
+
+    .bg-blue {
+      background-color: blue;
+    }
+
+    .border-top {
+      border-top: 1px solid #e4e4e4 !important;
+    }
+
+    .border-bottom,
+    .border-bottom td,
+    tr.border-bottom {
+      border-bottom: 1px solid #e4e4e4 !important;
+    }
+
+    .content {
+      position: absolute;
+      left: 5mm;
+      right: 5mm;
+      bottom: 5mm;
+      top: 5mm;
+      background-color: white;
+    }
+
+    .content.content-card {
+      border-radius: 20px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content-card-shadow {
+      position: absolute;
+      left: 6mm;
+      right: 4mm;
+      bottom: 4mm;
+      top: 6mm;
+      background-color: rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+    }
+
+    [class*="cosmetics-butterfly"] {
+      position: absolute;
+      border-radius: 20px;
+    }
+
+    .cosmetics-butterfly-top {
+      left: 0mm;
+      top: 0mm;
+    }
+
+    .cosmetics-butterfly-bottom {
+      bottom: 0mm;
+      right: 0mm;
+    }
+
+    .page.first {
+      border-left: 5px solid green;
+    }
+
+    .bottom {
+      position: absolute;
+      left: 5mm;
+      right: 5mm;
+      bottom: 5mm;
+      background-color: white;
+    }
+
+    .group {
+      margin-top: 3mm;
+    }
+
+    .line {
+      /* color: white; */
+      position: relative;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .logo {
+      position: relative;
+      width: 80%;
+      left: 10%;
+      top: 15%;
+    }
+
+    .img-logo {
+      height: 40px;
+    }
+
+    .text-company {
+      vertical-align: top;
+      line-height: 1.25;
+      font-size: 8px;
+    }
+
+    .header-space {
+      width: 2%;
+    }
+
+    .header-right {
+      vertical-align: top;
+      width: 40%;
+    }
+
+
+    table {
+      width: 100%;
+      font-size: 10px;
+    }
+
+    .no-gutters tbody,
+    .no-gutters td,
+    .no-gutters tfoot,
+    .no-gutters th,
+    .no-gutters thead,
+    .no-gutters tr {
+      padding: 0;
+    }
+
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    tr {
+      border-color: inherit;
+      border-style: solid;
+      border-width: 0;
+      padding: 0.5rem;
+    }
+
+    th,
+    thead {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      font-family: kanit;
+    }
+
+    td.no-margin>* {
+      margin-bottom: 0;
+    }
+
+    .table-summary,
+    table.no-gutters,
+    .table-header,
+    table.table-li,
+    .border-collapse {
+      border-collapse: collapse;
+    }
+
+    .table-header tbody,
+    .table-header td,
+    .table-header tfoot,
+    .table-header th,
+    .table-header thead,
+    .table-header tr {
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .table-header .header-right tbody,
+    .table-header .header-right td,
+    .table-header .header-right tfoot,
+    .table-header .header-right th,
+    .table-header .header-right thead,
+    .table-header .header-right tr {
+      padding: 0.25rem 1rem;
+    }
+
+    .table-header .header-right td.header-title {
+      font-family: 'IBM Plex Sans Thai', sans-serif;
+      font-weight: bold;
+      padding-top: 0;
+      padding-bottom: 0;
+      font-size: 20px;
+      text-align: center;
+      line-height: 1;
+    }
+
+    .table-header .header-right td.header-subtitle {
+      padding-top: 0;
+      padding-bottom: 0.75rem;
+      text-align: center;
+    }
+
+    .table-header .header-right tr.pt-2 td {
+      padding-top: 0.75rem;
+    }
+
+    .table-header .header-right tr.pb-2 td {
+      padding-bottom: 0.75rem;
+    }
+
+    .header-right td.tr-title {
+      width: 35%;
+    }
+
+    .layout-header-right tr.no-gutters,
+    .layout-header-right tr.no-gutters td {
+      padding: 0;
+    }
+
+    .text-center,
+    .text-center td,
+    table td.text-center {
+      text-align: center;
+    }
+
+    .text-left,
+    .text-left td,
+    table td.text-left {
+      text-align: left;
+    }
+
+    .text-end,
+    .text-end td,
+    table td.text-end {
+      text-align: end;
+    }
+
+    .text-multi-line,
+    .text-multi-line td {
+      line-height: 0.5;
+    }
+
+    .text-primary {
+      color: #ff5136;
+    }
+
+    .text-gd-primary {
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(135deg, #ff9336 0%, #ff5136 83.57%);
+    }
+
+    .text-muted {
+      color: #6c757d !important;
+    }
+
+    /*table-list*/
+    .table-list {
+      border-collapse: collapse
+    }
+
+    .table-list thead tr th {
+      border-top: 1px solid #e4e4e4;
+      border-bottom: 1px solid #e4e4e4;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+      border-collapse: collapse !important;
+      /* background-color: red; */
+    }
+
+    .text-title,
+    .text-title td {
+      font-weight: bold;
+      color: #ff5136;
+    }
+
+    .table-summary td,
+    .table-list tbody tr td.td-text-price {
+      vertical-align: bottom;
+    }
+
+    .td-text-price {
+      width: 50%;
+      padding-left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ใบอนุโมทนา -->
+  <div class="page bg-gradient-primary">
+    <div class="content-card-shadow"></div>
+    <div class="content content-card">
+      <img class="cosmetics-butterfly-top" src="https://via.placeholder.com/200x200" alt="">
+      <img class="cosmetics-butterfly-bottom" src="https://via.placeholder.com/200x200" alt="">
+      <div class="position-relative">
+        <table class="no-gutters">
+          <tbody>
+            <tr>
+              <td width="35%"></td>
+              <td class="text-center"><img class="mb-2" src="https://via.placeholder.com/40x40" alt=""></td>
+              <td class="text-end v-top" width="35%">
+                <p class="h6 text-bold"><small>เลขที่ 2022/100000001</small></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="h3 mb-5 text-primary text-bold">อนุโมทนาบัตร</p>
+        <p class="h3 mb-1 text-bold">นายบารากุ บุญนั่ง</p>
+        <p class="h6 mb-5 font-paragraph">เลขประจำตัวผู้เสียภาษีอากร 123456789</p>
+        <p class="mb-5">บริจาคเงินให้แก่แคมเปญ <strong>“โพสต์เพื่อนยาก”</strong> โดย
+          <strong>“องค์กรเพื่อความมั่นคงของโพสต์”</strong><br>
+          <strong>จำนวนเงิน 20,000,000 บาท (ยี่สิบล้านบาทถ้วน)</strong>
+        </p>
+        <table class="no-gutters mb-4">
+          <tbody class="text-center">
+            <tr>
+              <td class="" width="12%"></td>
+              <td class="">
+                <img class="mb-2" src="https://via.placeholder.com/100x40" alt="">
+                <p>นายสุภาพ จิตดี</p>
+                <p>(ผู้รับเงิน)</p>
+              </td>
+              <td class=" text-center p-0" width="10%">
+                <img src="https://via.placeholder.com/60x80" alt="">
+              </td>
+              <td class="">
+                <img class="mb-2" src="https://via.placeholder.com/100x40" alt="">
+                <p>นายสุภาพ จิตดี</p>
+                <p>(ผู้รับเงิน)</p>
+              </td>
+              <td class="" width="12%"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="h6 text-bold text-primary">ขอบคุณที่ร่วมสร้างความเปลี่ยนแปลงให้กับคนไทย ไดมีคุณภาพชีวิตที่ดีขึ้นอย่างยั่งยืน<br>
+          #บิดบุญเพื่อสังคมไทย #คนไทยต้องเท่าเทียม</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- receipt -->
+  <div class="page">
+    <div class="content">
+      <table class="table-header">
+        <tr>
+          <td class="header-left v-top">
+            <table class="mb-3">
+              <tr class="v-top">
+                <td class="pb-3 pe-3" width="22%">
+                  <img class="img-logo" src="https://www.bidboon.co/assets/images/logo_white.png">
+                </td>
+                <td class="text-company">
+                  บริษัท เอ็ดดูโค แล็บ จำกัด (สำนักงานใหญ่)<br>
+                  8/180 เจริญนคร 14 คลองสาน กทม. 10600<br>
+                  เลขประจำตัวผู้เสียภาษีอากร ********<br>
+                  โทร 080-080-8025<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="p-1" style="line-height: 1.4;"><span class="text-title">ผู้ขาย</span><br>
+                  ชื่อ-นามสกุล</td>
+                <td class="p-1" style="line-height: 1.4;"><span class="text-title">ผู้ซื้อ</span><br>
+                  ชื่อ-นามสกุล</td>
+              </tr>
+              <tr>
+
+              </tr>
+            </table>
+          </td>
+          <td class="header-space"></td>
+          <td class="header-right">
+            <table class="w-100 border-collapse">
+              <tbody class="v-top">
+                <tr class="border-bottom pb-2">
+                  <td colspan="2" class="header-title">ใบเสร็จ</td>
+                </tr>
+                <tr class="pt-2">
+                  <td class="text-title" width="30%">เลขที่</td>
+                  <td>12311231</td>
+                  <!-- <td>{{ $ 
+                    2 bg-blue">
+                  <td class="text-title" width="30%">เลขที่</td>
+                  <td>12311231<
+                    quotation->document_code }}</td> -->
+                </tr>
+                <tr class="border-bottom pb-2">
+                  <td class="text-title">วันที่</td>
+                  <td>12/12/64</td>
+                  <!-- <td>{{ $quotation->created_at->format('d/m/Y') }}</td> -->
+                </tr>
+                <tr class="pt-2 pb-3">
+                  <td class="text-title">บริจาคให้</td>
+                  <td>กองทุนเพื่อนโพสโหยหาความสงบสุข <br>โดยมูลนิธิเพื่อนโพสต์ยามยาก</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table class="table-list">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th width="50%">รายการ</th>
+            <th>จำนวน</th>
+            <th class="text-end">ราคาต่อหน่วย</th>
+            <th class="text-end">ยอดรวม</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-bottom">
+            <td class="text-bold text-center">1</td>
+            <td class="text-mult-line">
+              <p class="text-bold">ค่าบริจาค</p>
+              <p class="text-muted"><small>ให้กองทุนเพื่อนโพสโหยหาความสงบสุข โดยมูลนิธิเพื่อนโพสต์ยามยาก</small></p>
+            </td>
+            <td class="text-center">1</td>
+            <td class="text-end">200.00</td>
+            <td class="text-end text-bold">200.00</td>
+            <!-- <td class="text-bold text-center">{{ $indexList }}</td>
+            <td class="text-mult-line">
+                <p class="text-bold">{{ $documentFee->name }}</p>
+                <p class="text-muted mb-4"><small>{{ $documentFee->description }}</small></p>
+            </td>
+            <td class="text-center">{{ $documentFee->unit }}</td>
+            <td class="text-right">{{ number_format($documentFee->price_per_unit, 2) }}</td>
+            <td class="text-right">
+                @if ($documentFee->discount_amount)
+                    {{ number_format($documentFee->discount_amount, 2) }}
+                @elseif($documentFee->discount_percent)
+                    {{ $documentFee->discount_percent }}%
+                @else
+                    –
+                @endif
+            </td>
+            <td class="text-right text-bold">{{ number_format($documentFee->grand_total, 2) }}</td> -->
+          </tr>
+          <tr class="border-bottom">
+            <td class="text-bold text-center">1</td>
+            <td class="text-mult-line">
+              <p class="text-bold">ค่าประมูลสินค้า</p>
+              <p class="text-muted"><small>รองเท้า Nike รุ่น MOONSWATCH</small></p>
+            </td>
+            <td class="text-center">1</td>
+            <td class="text-end">200.00</td>
+            <td class="text-end text-bold">200.00</td>
+          </tr>
+        </tbody>
+        <tr class="border-bottom">
+          <td class="text-bold text-center">1</td>
+          <td class="text-mult-line">
+            <p class="text-bold">ค่าส่งสินค้า</p>
+            <p class="text-muted"><small></small></p>
+          </td>
+          <td class="text-center">1</td>
+          <td class="text-end">200.00</td>
+          <td class="text-end text-bold">200.00</td>
+        </tr>
+        </tbody>
+      </table>
+      <table class="table-summary">
+        <tbody>
+          <tr>
+            <td rowspan="8" class="td-text-price">({{ $bahtText->bahtText($receipt->grand_total) }})</td>
+            <td class="text-end pt-3">
+              <span class="text-title">จำนวนเงินรวมทั้งสิ้น</span>
+            </td>
+            <td class="text-end text-bold pt-3">
+              <strong>200.00</strong>
+            </td>
+          </tr>
+          <!-- <tr>
+            <td rowspan="8" class="td-text-price">({{ $bahtText->bahtText($receipt->grand_total) }})</td>
+            <td class="text-end pt-3">
+              <span class="text-title">จำนวนเงินที่ประมูล</span>
+            </td>
+            <td class="text-end text-bold pt-3">
+              <strong>200.00</strong>
+              <p><strong>{{ number_format($receipt->total5, 2) }}</strong></p>
+            </td>
+          </tr> -->
+          <!-- <tr class="text-end border-bottom pt-0 pb-3">
+            <td>
+              <span class="text-title">ค่าส่งสินค้า</span>
+            </td>
+            <td>
+              200.00
+            </td>
+          </tr>
+          <tr class="text-end pt-3">
+            <td class="text-title">
+              <p>จำนวนเงินรวมทั้งสิ้น</p>
+            </td>
+            <td class="text-bold">
+              <p>200.00</p>
+              <p>{{ number_format($receipt->grand_total, 2) }}</p>
+              <p>{{ number_format($receipt->receive_point) }} คะแนน</p>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="content">
+      <div class="bottom">
+        <div class="line center">8045 zürich</div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
